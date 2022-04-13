@@ -1,0 +1,27 @@
+ALGORITHM SENTENCE
+VAR
+    C:CHAR:="";
+    Str:STRING:="";
+    Leng:INTEGER:=0;
+    Voy:INTEGER:=0;
+    Word:INTEGER:=0;
+
+BEGIN
+    WHILE (C<>".") THEN
+write("Give a character")
+read(C)
+Str=Str + C
+leng =leng+1
+0
+
+     IF (C="a" or C="A" or C="e" or C="E" or C="i" or C="I" or C="o" or C="O" or C="u" or C="U" or C="y" or C="Y") THEN
+          Voy:= Voy + 1;
+     END_IF
+
+     IF (c=" ") THEN
+          Word = Word + 1;
+     END_IF
+END_WHILE
+write("The length of the sentence is ",Str," the number of vowels is ",Voy," the number of words is",Word)
+END
+END
